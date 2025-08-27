@@ -1,0 +1,14 @@
+.product_title {
+  padding: 12px 16px;
+  background-color: gray;
+  border-radius: 4px;
+  color: white;
+}
+
+.success {
+  background-color: green;
+}
+
+.error {
+  background-color: red;
+}
