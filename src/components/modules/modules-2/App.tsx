@@ -1,9 +1,9 @@
 // src/components/App.tsx
 import { useState } from "react";
-import Product from "./Product";
-import Book from "./Book";
-import Button from "./Button";
-import ClickCounter from "./ClickCounter";
+import Product from "../modules-2/Product";
+import Book from "../modules-2/Book";
+import Button from "../modules-2/Button";
+import ClickCounter from "../modules-2/ClickCounter";
 
 interface Values {
   x: number;
@@ -51,26 +51,14 @@ export default function App() {
         price={14.29}
       />
       <Book />
-      <Button
-        variant="primary"
-        text="Login"
-      />
-      <Button
-        variant="secondary"
-        text="Follow"
-      />
+      <Button variant="primary" text="Login" />
+      <Button variant="secondary" text="Follow" />
       <button onClick={handleClickFirst}>Current: {clicks}</button>
       <button onClick={toggleMessage}>
         {isOpen ? "Hide message" : "Show message"}
       </button>
-      <ClickCounter
-        value={clicks}
-        onUpdate={handleClick}
-      />
-      <ClickCounter
-        value={clicks}
-        onUpdate={handleClick}
-      />
+      <ClickCounter value={clicks} onUpdate={handleClick} />
+      <ClickCounter value={clicks} onUpdate={handleClick} />
       {isOpen && <p>🎉 Surprise! You toggled me.</p>}
       <div>
         <p>
