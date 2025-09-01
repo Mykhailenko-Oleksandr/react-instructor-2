@@ -2,7 +2,7 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./components/modules/modules-2/App";
+import App from "./components/modules/modules-3/App";
 
 // Нормалізація стилів
 import "modern-normalize";
